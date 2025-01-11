@@ -9,7 +9,7 @@ class Table(models.Model):
         return f'Table {self.number} - Seats: {self.seats}'
 
 
-class Reservation(models.Models):
+class Reservation(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
     date_time = models.DateTimeField()
